@@ -1,0 +1,48 @@
+{
+  "roles": [
+    "Software Engineer",
+    "Data Scientist",
+    "Product Manager",
+    "DevOps Engineer",
+    "Frontend Developer"
+  ],
+  "experience_levels": ["Intern", "Junior", "Mid-level", "Senior", "Lead"],
+  "domains": ["Technical", "Behavioral", "Problem-Solving", "System Design"],
+  "scoring_rubric": {
+    "clarity": {
+      "1": "Incoherent, difficult to understand",
+      "2": "Somewhat unclear, needs clarification",
+      "3": "Adequately clear, minor issues",
+      "4": "Clear and well-organized",
+      "5": "Excellent clarity, perfect organization"
+    },
+    "accuracy": {
+      "1": "Incorrect concepts, major errors",
+      "2": "Partially correct, some errors",
+      "3": "Mostly correct with minor gaps",
+      "4": "Correct with proper terminology",
+      "5": "Highly accurate, expert-level understanding"
+    },
+    "completeness": {
+      "1": "Minimal response, many gaps",
+      "2": "Partial answer, notable omissions",
+      "3": "Addresses main points, few examples",
+      "4": "Comprehensive with examples",
+      "5": "Complete with edge cases, thorough examples"
+    },
+    "confidence": {
+      "1": "Very uncertain, many hesitations",
+      "2": "Uncertain, some hesitations",
+      "3": "Moderately confident",
+      "4": "Confident answer",
+      "5": "Very confident and consistent"
+    }
+  },
+  "difficulty_levels": ["Easy", "Intermediate", "Hard", "Expert"],
+  "interview_settings": {
+    "max_questions": 10,
+    "max_followups_per_question": 1,
+    "time_per_question_minutes": 5,
+    "reveal_scores": false
+  }
+}
