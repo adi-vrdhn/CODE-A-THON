@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Automation Engine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-content">
+                <h1 class="logo">🎯 Interview Engine</h1>
+                <p class="tagline">AI-Powered Technical Interview Platform</p>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <!-- Setup Screen -->
+            <section id="setup-screen" class="screen active">
+                <div class="setup-container">
+                    <h2>Start Your Interview</h2>
+                    <form id="setup-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="role">Position *</label>
+                                <select id="role" required>
+                                    <option value="">Select Role</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="experience">Experience Level *</label>
+                                <select id="experience" required>
+                                    <option value="">Select Level</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="domain">Domain *</label>
+                                <select id="domain" required>
+                                    <option value="">Select Domain</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Start Interview</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Interview Screen -->
+            <section id="interview-screen" class="screen">
+                <div class="interview-container">
+                    <!-- Progress Bar -->
+                    <div class="progress-section">
+                        <div class="progress-info">
+                            <span>Question <span id="question-number">1</span> of <span id="total-questions">5</span></span>
+                            <span id="difficulty-badge" class="difficulty-badge medium">Medium</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div id="progress-fill" class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <!-- Question -->
+                    <div class="question-section">
+                        <h3 id="question-text"></h3>
+                        <div id="question-context" class="question-context"></div>
+                    </div>
+
+                    <!-- Answer Input -->
+                    <div class="answer-section">
+                        <label for="answer-textarea">Your Answer</label>
+                        <textarea id="answer-textarea" placeholder="Type your detailed answer here..." rows="6"></textarea>
+                        <div class="char-count">
+                            <span id="char-count">0</span> / 2000 characters
+                        </div>
+                    </div>
+
+                    <!-- Score Display -->
+                    <div id="score-display" class="score-display" style="display: none;"></div>
+
+                    <!-- Follow-up Section -->
+                    <div id="follow-up-section" class="follow-up-section" style="display: none;">
+                        <div class="follow-up-header">
+                            <h4>🤖 AI Follow-up Question</h4>
+                        </div>
+                        <p id="follow-up-question" class="follow-up-question"></p>
+                        <label for="followup-textarea">Follow-up Answer</label>
+                        <textarea id="followup-textarea" placeholder="Answer the follow-up question..." rows="4"></textarea>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="button-group">
+                        <button id="submit-btn" class="btn btn-primary">Submit Answer</button>
+                        <button id="skip-btn" class="btn btn-secondary">Skip Question</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Screen -->
+            <section id="results-screen" class="screen">
+                <div class="results-container">
+                    <h2>Interview Results</h2>
+
+                    <!-- Overall Score -->
+                    <div class="overall-score-section">
+                        <div class="score-circle">
+                            <div class="score-number" id="overall-score">0</div>
+                            <div class="score-text">/100</div>
+                        </div>
+                        <div id="level-interpretation" class="level-interpretation"></div>
+                    </div>
+
+                    <!-- Detailed Metrics -->
+                    <div class="metrics-section">
+                        <h3>Performance Breakdown</h3>
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <div class="metric-label">Clarity</div>
+                                <div class="metric-bar">
+                                    <div id="bar-clarity" class="metric-fill"></div>
+                                </div>
+                                <div class="metric-value" id="score-clarity">0</div>
+                            </div>
+
+                            <div class="metric">
+                                <div class="metric-label">Accuracy</div>
+                                <div class="metric-bar">
+                                    <div id="bar-accuracy" class="metric-fill"></div>
+                                </div>
+                                <div class="metric-value" id="score-accuracy">0</div>
+                            </div>
+
+                            <div class="metric">
+                                <div class="metric-label">Completeness</div>
+                                <div class="metric-bar">
+                                    <div id="bar-completeness" class="metric-fill"></div>
+                                </div>
+                                <div class="metric-value" id="score-completeness">0</div>
+                            </div>
+
+                            <div class="metric">
+                                <div class="metric-label">Confidence</div>
+                                <div class="metric-bar">
+                                    <div id="bar-confidence" class="metric-fill"></div>
+                                </div>
+                                <div class="metric-value" id="score-confidence">0</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommendations -->
+                    <div class="recommendations-section">
+                        <h3>🎯 AI Recommendations</h3>
+                        <ul id="recommendations-list" class="recommendations-list">
+                        </ul>
+                    </div>
+
+                    <!-- Export Options -->
+                    <div class="export-section">
+                        <h3>Export Report</h3>
+                        <div class="button-group">
+                            <button id="export-json-btn" class="btn btn-secondary">Download JSON</button>
+                            <button id="export-html-btn" class="btn btn-secondary">Download HTML</button>
+                            <button id="restart-btn" class="btn btn-primary">Start New Interview</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Loading Screen -->
+            <section id="loading-screen" class="screen">
+                <div class="loader-container">
+                    <div class="loader"></div>
+                    <p>Processing with AI...</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
