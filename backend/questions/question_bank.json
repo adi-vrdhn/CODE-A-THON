@@ -1,0 +1,251 @@
+{
+  "Software Engineer": {
+    "Easy": [
+      {
+        "id": "SE-E-001",
+        "text": "Explain what a variable is and why it's important in programming.",
+        "domain": "Technical",
+        "context": "Basic computer science concept",
+        "sample_answer": "A variable is a named container that stores a value. It's important because it allows us to store, retrieve, and manipulate data during program execution.",
+        "key_points": ["storage", "naming", "data manipulation"],
+        "follow_up": "Can you give an example of how you'd use a variable?"
+      },
+      {
+        "id": "SE-E-002",
+        "text": "What's the difference between a list and a dictionary?",
+        "domain": "Technical",
+        "context": "Data structures",
+        "sample_answer": "A list is an ordered collection of items accessed by index, while a dictionary is an unordered collection of key-value pairs accessed by key.",
+        "key_points": ["ordering", "access method", "use cases"],
+        "follow_up": "When would you use a dictionary instead of a list?"
+      },
+      {
+        "id": "SE-E-003",
+        "text": "What is version control and why is it used?",
+        "domain": "Technical",
+        "context": "Git/development practices",
+        "sample_answer": "Version control tracks changes to code and allows multiple developers to work on the same project. It provides history, branching, and collaboration features.",
+        "key_points": ["change tracking", "collaboration", "history", "branching"],
+        "follow_up": "Have you used Git before? What commands do you use most?"
+      }
+    ],
+    "Intermediate": [
+      {
+        "id": "SE-I-001",
+        "text": "Describe the differences between classes and objects in OOP.",
+        "domain": "Technical",
+        "context": "Object-Oriented Programming",
+        "sample_answer": "A class is a blueprint or template that defines properties and methods. An object is an instance of a class with specific values.",
+        "key_points": ["template vs instance", "attributes", "methods", "abstraction"],
+        "follow_up": "How does inheritance work with classes?"
+      },
+      {
+        "id": "SE-I-002",
+        "text": "Explain the time and space complexity of a binary search.",
+        "domain": "Technical",
+        "context": "Algorithms and complexity",
+        "sample_answer": "Binary search has O(log n) time complexity because it halves the search space with each iteration, and O(1) space complexity if iterative.",
+        "key_points": ["O(log n)", "divide and conquer", "prerequisites", "space trade-offs"],
+        "follow_up": "What are the requirements for binary search to work?"
+      },
+      {
+        "id": "SE-I-003",
+        "text": "What is a REST API and what are the main HTTP methods?",
+        "domain": "Technical",
+        "context": "Web development and API design",
+        "sample_answer": "REST is an architectural style for web services. Main methods are GET (retrieve), POST (create), PUT (update), DELETE (remove), and PATCH (partial update).",
+        "key_points": ["stateless", "HTTP methods", "resources", "idempotency"],
+        "follow_up": "What's the difference between PUT and PATCH?"
+      }
+    ],
+    "Hard": [
+      {
+        "id": "SE-H-001",
+        "text": "Design a caching strategy for a distributed system. What trade-offs exist?",
+        "domain": "System Design",
+        "context": "Scalability and performance",
+        "sample_answer": "A multi-level cache (local, distributed like Redis) reduces latency. Trade-offs include consistency (cache invalidation is hard), memory cost, and complexity.",
+        "key_points": ["cache invalidation", "consistency models", "write-through vs write-back", "memory cost"],
+        "follow_up": "How would you handle cache invalidation at scale?"
+      },
+      {
+        "id": "SE-H-002",
+        "text": "Explain the CAP theorem and its implications for distributed databases.",
+        "domain": "Technical",
+        "context": "Distributed Systems",
+        "sample_answer": "CAP states you can have at most 2 of: Consistency, Availability, Partition tolerance. Most systems choose AP or CP. This affects design decisions.",
+        "key_points": ["tradeoffs", "network partitions", "use cases", "real-world examples"],
+        "follow_up": "Which would you prioritize in a financial system and why?"
+      },
+      {
+        "id": "SE-H-003",
+        "text": "How would you debug a memory leak in a production system?",
+        "domain": "Problem-Solving",
+        "context": "Performance troubleshooting",
+        "sample_answer": "Monitor memory usage, use profiling tools, identify the growing object, check for circular references, use heap dumps, and implement automated memory monitoring.",
+        "key_points": ["profiling tools", "heap analysis", "circular references", "monitoring"],
+        "follow_up": "What tools have you used for memory profiling?"
+      }
+    ],
+    "Expert": [
+      {
+        "id": "SE-EX-001",
+        "text": "Architect a system that handles 1M concurrent users. What are the key challenges?",
+        "domain": "System Design",
+        "context": "Large-scale systems",
+        "sample_answer": "Key challenges: load balancing, database sharding, caching, horizontal scaling, connection pooling, message queues, and monitoring. Use microservices, CDN, and auto-scaling.",
+        "key_points": ["load balancing", "sharding", "horizontal scaling", "monitoring", "async processing"],
+        "follow_up": "How would you handle the database layer for this scale?"
+      }
+    ]
+  },
+  "Data Scientist": {
+    "Easy": [
+      {
+        "id": "DS-E-001",
+        "text": "What is the difference between supervised and unsupervised learning?",
+        "domain": "Technical",
+        "context": "Machine learning fundamentals",
+        "sample_answer": "Supervised learning uses labeled data to train models (classification, regression). Unsupervised learning finds patterns in unlabeled data (clustering, dimensionality reduction).",
+        "key_points": ["labeled vs unlabeled", "use cases", "examples"],
+        "follow_up": "Can you name some algorithms for each type?"
+      },
+      {
+        "id": "DS-E-002",
+        "text": "How do you measure model performance?",
+        "domain": "Technical",
+        "context": "Model evaluation",
+        "sample_answer": "Use metrics like accuracy, precision, recall, F1-score for classification; MSE, RMSE, R² for regression. Choose metrics based on problem type and priorities.",
+        "key_points": ["accuracy vs precision", "F1-score", "tradeoffs", "domain-specific metrics"],
+        "follow_up": "When would you use precision over accuracy?"
+      }
+    ],
+    "Intermediate": [
+      {
+        "id": "DS-I-001",
+        "text": "Explain feature engineering and its importance.",
+        "domain": "Technical",
+        "context": "Data preprocessing",
+        "sample_answer": "Feature engineering creates meaningful features from raw data. It's crucial because good features improve model performance more than complex algorithms.",
+        "key_points": ["domain knowledge", "feature selection", "scaling", "encoding"],
+        "follow_up": "What techniques do you use for feature selection?"
+      }
+    ],
+    "Hard": [
+      {
+        "id": "DS-H-001",
+        "text": "How do you handle class imbalance in classification problems?",
+        "domain": "Technical",
+        "context": "Advanced ML techniques",
+        "sample_answer": "Techniques include oversampling, undersampling, SMOTE, class weights, and using appropriate metrics (not accuracy). Choose based on business requirements.",
+        "key_points": ["oversampling", "SMOTE", "class weights", "metric selection"],
+        "follow_up": "Can you explain SMOTE in detail?"
+      }
+    ]
+  },
+  "Product Manager": {
+    "Easy": [
+      {
+        "id": "PM-E-001",
+        "text": "What does a product manager do?",
+        "domain": "Behavioral",
+        "context": "Role understanding",
+        "sample_answer": "A PM bridges business, engineering, and user needs. They define product vision, prioritize features, work with teams, and measure success.",
+        "key_points": ["vision", "prioritization", "cross-functional", "metrics"],
+        "follow_up": "What's your experience with prioritization?"
+      }
+    ],
+    "Intermediate": [
+      {
+        "id": "PM-I-001",
+        "text": "How would you approach building a new feature?",
+        "domain": "Problem-Solving",
+        "context": "Feature development process",
+        "sample_answer": "1) Understand user needs, 2) Define requirements, 3) Prioritize with business impact, 4) Collaborate with design/engineering, 5) Launch and measure success.",
+        "key_points": ["user research", "requirements", "stakeholder management", "metrics"],
+        "follow_up": "How do you measure success for a feature?"
+      }
+    ],
+    "Hard": [
+      {
+        "id": "PM-H-001",
+        "text": "How would you decide to kill a feature that's not working?",
+        "domain": "Behavioral",
+        "context": "Decision making",
+        "sample_answer": "Analyze metrics vs. goals, consider sunk cost fallacy, get stakeholder input, communicate clearly, and have a plan for existing users.",
+        "key_points": ["data-driven", "stakeholder communication", "user impact", "opportunity cost"],
+        "follow_up": "Tell me about a time you had to make a difficult decision."
+      }
+    ]
+  },
+  "DevOps Engineer": {
+    "Easy": [
+      {
+        "id": "DO-E-001",
+        "text": "What is the difference between Docker and a VM?",
+        "domain": "Technical",
+        "context": "Containerization",
+        "sample_answer": "Docker containers are lightweight, contain only the app and dependencies, share the OS kernel. VMs are heavier, virtualize the entire OS.",
+        "key_points": ["lightweight", "efficiency", "resource usage"],
+        "follow_up": "What are the benefits of using containers?"
+      }
+    ],
+    "Intermediate": [
+      {
+        "id": "DO-I-001",
+        "text": "Explain CI/CD and its benefits.",
+        "domain": "Technical",
+        "context": "DevOps practices",
+        "sample_answer": "CI/CD automates testing and deployment. CI runs tests on every commit. CD pushes to production. Benefits: faster releases, fewer bugs, quick feedback.",
+        "key_points": ["automation", "speed", "reliability", "feedback loops"],
+        "follow_up": "What tools do you use for CI/CD?"
+      }
+    ],
+    "Hard": [
+      {
+        "id": "DO-H-001",
+        "text": "Design a resilient Kubernetes deployment for a critical service.",
+        "domain": "System Design",
+        "context": "Infrastructure at scale",
+        "sample_answer": "Use multiple replicas, resource limits, health checks, auto-scaling, rolling updates, multi-zone deployment, persistent storage, and monitoring/alerting.",
+        "key_points": ["high availability", "auto-scaling", "monitoring", "persistent storage"],
+        "follow_up": "How would you handle database failover?"
+      }
+    ]
+  },
+  "Frontend Developer": {
+    "Easy": [
+      {
+        "id": "FE-E-001",
+        "text": "Explain the difference between client-side and server-side rendering.",
+        "domain": "Technical",
+        "context": "Web rendering",
+        "sample_answer": "Client-side rendering builds HTML in the browser via JavaScript. Server-side rendering builds HTML on the server. CSR is faster after load, SSR is better for SEO.",
+        "key_points": ["performance", "SEO", "initial load", "future updates"],
+        "follow_up": "When would you choose one over the other?"
+      }
+    ],
+    "Intermediate": [
+      {
+        "id": "FE-I-001",
+        "text": "What are React hooks and why are they useful?",
+        "domain": "Technical",
+        "context": "React Framework",
+        "sample_answer": "Hooks let you use state and side effects in functional components. Benefits: code reuse, simpler logic, better organization without class complexity.",
+        "key_points": ["state management", "side effects", "reusability", "composition"],
+        "follow_up": "When would you use useEffect?"
+      }
+    ],
+    "Hard": [
+      {
+        "id": "FE-H-001",
+        "text": "Design a performant, scalable state management solution for a large app.",
+        "domain": "Technical",
+        "context": "Frontend architecture",
+        "sample_answer": "Use Redux/Zustand for global state, localStorage for persistence, lazy loading, code splitting, memoization, and consider GraphQL for data fetching and caching.",
+        "key_points": ["separation of concerns", "performance", "scalability", "DevTools"],
+        "follow_up": "How would you handle async operations in Redux?"
+      }
+    ]
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "report_metadata": {
+    "generated_at": "2026-02-07T13:43:20.622077",
+    "version": "1.0"
+  },
+  "candidate": {
+    "name": "adityavardhan Singh Rathore",
+    "email": "avrdhn28@gmail.com",
+    "role": "Data Scientist",
+    "experience_level": "Intern",
+    "domain": "Behavioral"
+  },
+  "results": [
+    {
+      "question_id": "DS-E-002",
+      "question_text": "How do you measure model performance?",
+      "answer": "I measure model performance based on the problem type and business objective. For regression, I use metrics like MAE, RMSE, and R\u00b2 to understand prediction error and explained variance. For classification, I look beyond accuracy and evaluate precision, recall, F1-score, ROC-AUC, and PR-AUC, especially when the data is imbalanced. I also analyze the confusion matrix, bias\u2013variance tradeoff, and overfitting using validation techniques such as train-test split or cross-validation. Ultimately, I choose metrics that align with business impact, considering the cost of false positives and false negatives rather than relying on a single number.",
+      "follow_up_answer": "I would use precision over accuracy when the cost of false positives is high and the dataset is imbalanced. Accuracy can be misleading because a model may appear accurate by simply predicting the majority class. Precision focuses on how many of the predicted positives are actually correct, which is critical in cases like spam detection, medical diagnosis, or fraud alerts\u2014where incorrectly labeling a normal email as spam or a genuine transaction as fraud can cause significant problems. Therefore, when the goal is to minimize false alarms rather than just maximize overall correctness, precision becomes the more appropriate metric.",
+      "follow_up_question": "When would you use precision over accuracy?",
+      "scores": {
+        "clarity": 5,
+        "accuracy": 2,
+        "completeness": 3,
+        "confidence": 3
+      },
+      "overall": 3.25,
+      "insights": {
+        "strengths": [
+          "Well-organized and clear explanation"
+        ],
+        "gaps": [
+          "Consider deeper technical understanding",
+          "Missing discussion of: accuracy vs precision, tradeoffs, domain-specific metrics"
+        ]
+      },
+      "timestamp": "2026-02-07T13:40:14.744822"
+    },
+    {
+      "question_id": "DS-E-001",
+      "question_text": "What is the difference between supervised and unsupervised learning?",
+      "answer": "Supervised learning uses labeled data, where the model is trained with input\u2013output pairs to learn a mapping and make predictions on new data, such as in classification or regression tasks. Unsupervised learning, on the other hand, works with unlabeled data and aims to discover hidden patterns or structures like clusters, relationships, or dimensional representations without predefined outputs. The key difference is that supervised learning has a clear target variable to guide training, while unsupervised learning explores the data on its own to extract insights without explicit guidance.",
+      "follow_up_answer": "For supervised learning, common algorithms include Linear and Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, k-Nearest Neighbors, Gradient Boosting methods like XGBoost and AdaBoost, and Neural Networks. These are used for tasks such as classification and regression where labeled data is available.\n\nFor unsupervised learning, popular algorithms are K-Means Clustering, Hierarchical Clustering, DBSCAN, Principal Component Analysis (PCA), t-SNE, and Autoencoders. These are used to find patterns, group similar data points, or reduce dimensionality when no labels are provided.",
+      "follow_up_question": "Can you name some algorithms for each type?",
+      "scores": {
+        "clarity": 4,
+        "accuracy": 2,
+        "completeness": 3,
+        "confidence": 3
+      },
+      "overall": 3.0,
+      "insights": {
+        "strengths": [
+          "Well-organized and clear explanation"
+        ],
+        "gaps": [
+          "Consider deeper technical understanding",
+          "Missing discussion of: labeled vs unlabeled, use cases, examples"
+        ]
+      },
+      "timestamp": "2026-02-07T13:40:49.655476"
+    },
+    {
+      "question_id": "DS-E-001",
+      "question_text": "What is the difference between supervised and unsupervised learning?",
+      "answer": "For supervised learning, common algorithms include Linear and Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, k-Nearest Neighbors, Gradient Boosting methods like XGBoost and AdaBoost, and Neural Networks. These are used for tasks such as classification and regression where labeled data is available.\n\nFor unsupervised learning, popular algorithms are K-Means Clustering, Hierarchical Clustering, DBSCAN, Principal Component Analysis (PCA), t-SNE, and Autoencoders. These are used to find patterns, group similar data points, or reduce dimensionality when no labels are provided.",
+      "follow_up_answer": "For supervised learning, common algorithms include Linear and Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, k-Nearest Neighbors, Gradient Boosting methods like XGBoost and AdaBoost, and Neural Networks. These are used for tasks such as classification and regression where labeled data is available.\n\nFor unsupervised learning, popular algorithms are K-Means Clustering, Hierarchical Clustering, DBSCAN, Principal Component Analysis (PCA), t-SNE, and Autoencoders. These are used to find patterns, group similar data points, or reduce dimensionality when no labels are provided.",
+      "follow_up_question": "Can you name some algorithms for each type?",
+      "scores": {
+        "clarity": 4,
+        "accuracy": 3,
+        "completeness": 3,
+        "confidence": 3
+      },
+      "overall": 3.25,
+      "insights": {
+        "strengths": [
+          "Well-organized and clear explanation"
+        ],
+        "gaps": [
+          "Missing discussion of: labeled vs unlabeled, use cases, examples"
+        ]
+      },
+      "timestamp": "2026-02-07T13:41:08.272521"
+    },
+    {
+      "question_id": "DS-E-001",
+      "question_text": "What is the difference between supervised and unsupervised learning?",
+      "answer": "For supervised learning, common algorithms include Linear and Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, k-Nearest Neighbors, Gradient Boosting methods like XGBoost and AdaBoost, and Neural Networks. These are used for tasks such as classification and regression where labeled data is available.\n\nFor unsupervised learning, popular algorithms are K-Means Clustering, Hierarchical Clustering, DBSCAN, Principal Component Analysis (PCA), t-SNE, and Autoencoders. These are used to find patterns, group similar data points, or reduce dimensionality when no labels are provided.",
+      "follow_up_answer": "For supervised learning, common algorithms include Linear and Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, k-Nearest Neighbors, Gradient Boosting methods like XGBoost and AdaBoost, and Neural Networks. These are used for tasks such as classification and regression where labeled data is available.\n\nFor unsupervised learning, popular algorithms are K-Means Clustering, Hierarchical Clustering, DBSCAN, Principal Component Analysis (PCA), t-SNE, and Autoencoders. These are used to find patterns, group similar data points, or reduce dimensionality when no labels are provided.",
+      "follow_up_question": "Can you name some algorithms for each type?",
+      "scores": {
+        "clarity": 4,
+        "accuracy": 3,
+        "completeness": 3,
+        "confidence": 3
+      },
+      "overall": 3.25,
+      "insights": {
+        "strengths": [
+          "Well-organized and clear explanation"
+        ],
+        "gaps": [
+          "Missing discussion of: labeled vs unlabeled, use cases, examples"
+        ]
+      },
+      "timestamp": "2026-02-07T13:41:12.118543"
+    },
+    {
+      "question_id": "DS-E-001",
+      "question_text": "What is the difference between supervised and unsupervised learning?",
+      "answer": "For supervised learning, common algorithms include Linear and Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, k-Nearest Neighbors, Gradient Boosting methods like XGBoost and AdaBoost, and Neural Networks. These are used for tasks such as classification and regression where labeled data is available.\n\nFor unsupervised learning, popular algorithms are K-Means Clustering, Hierarchical Clustering, DBSCAN, Principal Component Analysis (PCA), t-SNE, and Autoencoders. These are used to find patterns, group similar data points, or reduce dimensionality when no labels are provided.",
+      "follow_up_answer": "For supervised learning, common algorithms include Linear and Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, k-Nearest Neighbors, Gradient Boosting methods like XGBoost and AdaBoost, and Neural Networks. These are used for tasks such as classification and regression where labeled data is available.\n\nFor unsupervised learning, popular algorithms are K-Means Clustering, Hierarchical Clustering, DBSCAN, Principal Component Analysis (PCA), t-SNE, and Autoencoders. These are used to find patterns, group similar data points, or reduce dimensionality when no labels are provided.",
+      "follow_up_question": "Can you name some algorithms for each type?",
+      "scores": {
+        "clarity": 4,
+        "accuracy": 3,
+        "completeness": 3,
+        "confidence": 3
+      },
+      "overall": 3.25,
+      "insights": {
+        "strengths": [
+          "Well-organized and clear explanation"
+        ],
+        "gaps": [
+          "Missing discussion of: labeled vs unlabeled, use cases, examples"
+        ]
+      },
+      "timestamp": "2026-02-07T13:41:16.104730"
+    },
+    {
+      "question_id": "DS-E-002",
+      "question_text": "How do you measure model performance?",
+      "answer": "For supervised learning, common algorithms include Linear and Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, k-Nearest Neighbors, Gradient Boosting methods like XGBoost and AdaBoost, and Neural Networks. These are used for tasks such as classification and regression where labeled data is available.\n\nFor unsupervised learning, popular algorithms are K-Means Clustering, Hierarchical Clustering, DBSCAN, Principal Component Analysis (PCA), t-SNE, and Autoencoders. These are used to find patterns, group similar data points, or reduce dimensionality when no labels are provided.",
+      "follow_up_answer": "For supervised learning, common algorithms include Linear and Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, k-Nearest Neighbors, Gradient Boosting methods like XGBoost and AdaBoost, and Neural Networks. These are used for tasks such as classification and regression where labeled data is available.\n\nFor unsupervised learning, popular algorithms are K-Means Clustering, Hierarchical Clustering, DBSCAN, Principal Component Analysis (PCA), t-SNE, and Autoencoders. These are used to find patterns, group similar data points, or reduce dimensionality when no labels are provided.",
+      "follow_up_question": "When would you use precision over accuracy?",
+      "scores": {
+        "clarity": 4,
+        "accuracy": 3,
+        "completeness": 3,
+        "confidence": 3
+      },
+      "overall": 3.25,
+      "insights": {
+        "strengths": [
+          "Well-organized and clear explanation"
+        ],
+        "gaps": [
+          "Missing discussion of: accuracy vs precision, F1-score, tradeoffs, domain-specific metrics"
+        ]
+      },
+      "timestamp": "2026-02-07T13:41:19.268466"
+    },
+    {
+      "question_id": "DS-E-002",
+      "question_text": "How do you measure model performance?",
+      "answer": "For supervised learning, common algorithms include Linear and Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, k-Nearest Neighbors, Gradient Boosting methods like XGBoost and AdaBoost, and Neural Networks. These are used for tasks such as classification and regression where labeled data is available.\n\nFor unsupervised learning, popular algorithms are K-Means Clustering, Hierarchical Clustering, DBSCAN, Principal Component Analysis (PCA), t-SNE, and Autoencoders. These are used to find patterns, group similar data points, or reduce dimensionality when no labels are provided.",
+      "follow_up_answer": "For supervised learning, common algorithms include Linear and Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, k-Nearest Neighbors, Gradient Boosting methods like XGBoost and AdaBoost, and Neural Networks. These are used for tasks such as classification and regression where labeled data is available.\n\nFor unsupervised learning, popular algorithms are K-Means Clustering, Hierarchical Clustering, DBSCAN, Principal Component Analysis (PCA), t-SNE, and Autoencoders. These are used to find patterns, group similar data points, or reduce dimensionality when no labels are provided.",
+      "follow_up_question": "When would you use precision over accuracy?",
+      "scores": {
+        "clarity": 4,
+        "accuracy": 3,
+        "completeness": 3,
+        "confidence": 3
+      },
+      "overall": 3.25,
+      "insights": {
+        "strengths": [
+          "Well-organized and clear explanation"
+        ],
+        "gaps": [
+          "Missing discussion of: accuracy vs precision, F1-score, tradeoffs, domain-specific metrics"
+        ]
+      },
+      "timestamp": "2026-02-07T13:41:22.554256"
+    },
+    {
+      "question_id": "DS-E-002",
+      "question_text": "How do you measure model performance?",
+      "answer": "For supervised learning, common algorithms include Linear and Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, k-Nearest Neighbors, Gradient Boosting methods like XGBoost and AdaBoost, and Neural Networks. These are used for tasks such as classification and regression where labeled data is available.\n\nFor unsupervised learning, popular algorithms are K-Means Clustering, Hierarchical Clustering, DBSCAN, Principal Component Analysis (PCA), t-SNE, and Autoencoders. These are used to find patterns, group similar data points, or reduce dimensionality when no labels are provided.",
+      "follow_up_answer": "For supervised learning, common algorithms include Linear and Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, k-Nearest Neighbors, Gradient Boosting methods like XGBoost and AdaBoost, and Neural Networks. These are used for tasks such as classification and regression where labeled data is available.\n\nFor unsupervised learning, popular algorithms are K-Means Clustering, Hierarchical Clustering, DBSCAN, Principal Component Analysis (PCA), t-SNE, and Autoencoders. These are used to find patterns, group similar data points, or reduce dimensionality when no labels are provided.",
+      "follow_up_question": "When would you use precision over accuracy?",
+      "scores": {
+        "clarity": 4,
+        "accuracy": 3,
+        "completeness": 3,
+        "confidence": 3
+      },
+      "overall": 3.25,
+      "insights": {
+        "strengths": [
+          "Well-organized and clear explanation"
+        ],
+        "gaps": [
+          "Missing discussion of: accuracy vs precision, F1-score, tradeoffs, domain-specific metrics"
+        ]
+      },
+      "timestamp": "2026-02-07T13:41:28.138005"
+    },
+    {
+      "question_id": "DS-E-002",
+      "question_text": "How do you measure model performance?",
+      "answer": "For supervised learning, common algorithms include Linear and Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, k-Nearest Neighbors, Gradient Boosting methods like XGBoost and AdaBoost, and Neural Networks. These are used for tasks such as classification and regression where labeled data is available.\n\nFor unsupervised learning, popular algorithms are K-Means Clustering, Hierarchical Clustering, DBSCAN, Principal Component Analysis (PCA), t-SNE, and Autoencoders. These are used to find patterns, group similar data points, or reduce dimensionality when no labels are provided.",
+      "follow_up_answer": "For supervised learning, common algorithms include Linear and Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, k-Nearest Neighbors, Gradient Boosting methods like XGBoost and AdaBoost, and Neural Networks. These are used for tasks such as classification and regression where labeled data is available.\n\nFor unsupervised learning, popular algorithms are K-Means Clustering, Hierarchical Clustering, DBSCAN, Principal Component Analysis (PCA), t-SNE, and Autoencoders. These are used to find patterns, group similar data points, or reduce dimensionality when no labels are provided.",
+      "follow_up_question": "When would you use precision over accuracy?",
+      "scores": {
+        "clarity": 4,
+        "accuracy": 3,
+        "completeness": 3,
+        "confidence": 3
+      },
+      "overall": 3.25,
+      "insights": {
+        "strengths": [
+          "Well-organized and clear explanation"
+        ],
+        "gaps": [
+          "Missing discussion of: accuracy vs precision, F1-score, tradeoffs, domain-specific metrics"
+        ]
+      },
+      "timestamp": "2026-02-07T13:41:31.435334"
+    },
+    {
+      "question_id": "DS-E-002",
+      "question_text": "How do you measure model performance?",
+      "answer": "For supervised learning, common algorithms include Linear and Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, k-Nearest Neighbors, Gradient Boosting methods like XGBoost and AdaBoost, and Neural Networks. These are used for tasks such as classification and regression where labeled data is available.\n\nFor unsupervised learning, popular algorithms are K-Means Clustering, Hierarchical Clustering, DBSCAN, Principal Component Analysis (PCA), t-SNE, and Autoencoders. These are used to find patterns, group similar data points, or reduce dimensionality when no labels are provided.",
+      "follow_up_answer": "For supervised learning, common algorithms include Linear and Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, k-Nearest Neighbors, Gradient Boosting methods like XGBoost and AdaBoost, and Neural Networks. These are used for tasks such as classification and regression where labeled data is available.\n\nFor unsupervised learning, popular algorithms are K-Means Clustering, Hierarchical Clustering, DBSCAN, Principal Component Analysis (PCA), t-SNE, and Autoencoders. These are used to find patterns, group similar data points, or reduce dimensionality when no labels are provided.",
+      "follow_up_question": "When would you use precision over accuracy?",
+      "scores": {
+        "clarity": 4,
+        "accuracy": 3,
+        "completeness": 3,
+        "confidence": 3
+      },
+      "overall": 3.25,
+      "insights": {
+        "strengths": [
+          "Well-organized and clear explanation"
+        ],
+        "gaps": [
+          "Missing discussion of: accuracy vs precision, F1-score, tradeoffs, domain-specific metrics"
+        ]
+      },
+      "timestamp": "2026-02-07T13:41:35.938226"
+    }
+  ],
+  "analysis": {
+    "aggregate_scores": {
+      "clarity": 4.1,
+      "accuracy": 2.8,
+      "completeness": 3,
+      "confidence": 3,
+      "overall": 3.23
+    },
+    "dimension_analysis": {
+      "clarity": {
+        "average": 4.1,
+        "min": 4,
+        "max": 5,
+        "consistency": 4.68,
+        "trend": "stable"
+      },
+      "accuracy": {
+        "average": 2.8,
+        "min": 2,
+        "max": 3,
+        "consistency": 4.58,
+        "trend": "stable"
+      },
+      "completeness": {
+        "average": 3,
+        "min": 3,
+        "max": 3,
+        "consistency": 5.0,
+        "trend": "stable"
+      },
+      "confidence": {
+        "average": 3,
+        "min": 3,
+        "max": 3,
+        "consistency": 5.0,
+        "trend": "stable"
+      }
+    },
+    "patterns": [
+      "Strongest dimension: Clarity (4.1/5)",
+      "Needs improvement: Accuracy (2.8/5)",
+      "Very consistent performance across all questions",
+      "Mixed performance with both strengths and areas for growth"
+    ],
+    "consistency": {
+      "score": 4.92,
+      "std_dev": 0.08,
+      "interpretation": "Very consistent performance"
+    },
+    "recommendations": [
+      "Deepen your technical knowledge in core concepts",
+      "Study key terminology and use it correctly in responses",
+      "Good foundation - focus on weak areas to improve further",
+      "While you're clear, deepen your technical expertise"
+    ],
+    "summary": {
+      "overall_level": "Proficient",
+      "score": 3.23,
+      "questions_answered": 10,
+      "interpretation": "Candidate demonstrates proficient interview performance"
+    }
+  }
+}
